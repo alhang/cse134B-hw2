@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Alan Hang's Digital Portfolio</title>
+        <meta charset="UTF-8">
+        <meta name="author" content="Alan Hang">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <header>
+            <h1>Welcome to Alan's Digital Portfolio</h1>
+            <svg height="130" width="500">
+                <ellipse cx="100" cy="70" rx="85" ry="55" fill="blue" />
+                <text fill="#ffffff" font-size="50" font-family="Verdana" x="35" y="87">ALAN</text>
+            </svg>
+
+            <h3>Navigation:</h3>
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about.html"><b>About</b></a></li>
+                    <li><a href="./projects.html">Projects</a></li>
+                    <li><a href="./skills.html">Skills</a></li>
+                    <li><a href="./contact.html">Contact Me</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <hr>
+
+        <main>
+            <section>
+                <h2>About Me</h2>
+                <figure>
+                    <picture><img src="./media/profilepic.jpeg" width="280" height="375" alt="Profile Picture"> 
+                        <!--picture ratio is 1151 × 1498-->
+                    </picture>
+                    <figcaption><i>Winter break in Yosemite</i></figcaption>
+                </figure>
+                <p>Hello there! My name is Alan and I'm from San Diego, born and raised. In my free time, I like to engage in my various hobbies. 
+                    I like making art, whether it be digital, painting, or just using a pencil. I specialize in hyper-realistic
+                    graphite art, but have been exploring other areas such as digital manga art as well as oil painting. I also enjoy 
+                    cooking, especially cooking for friends and family. My favorite cuisines to cook are Cantonese
+                    comfort food as well as many Japanese dishes. I also like running, rock climbing and going to the gym. 
+                    My current goal is to run a marathon by the end of summer and gain 10 pounds of muscle by the end of the year. 
+                    And right now, I'm getting into acoustic guitar. I used to play to violin so it's somewhat similar, 
+                    but similiar doesn't mean that it's easy. Even though it's harder and I'm only a beginner, I like 
+                    playing fingerstyle guitar because I find it much more rewarding. 
+                </p>
+                <p>My favorite ice cream flavor is cherry.</p>
+            </section>
+
+            <section>
+                <h3>Education</h3>
+                <p>I'm currently studying at UC San Diego, majoring in computer science. I'm planning on graduating
+                    around winter quarter of 2024.
+                </p>
+            </section>
+
+            <section>
+                <h3>Enough about me. I'd also like you get to know you better!</h3>
+                <form action="./response.html" method="POST">
+                    <label for="survey">Are you a: </label>
+                    <select name="survey" id="survey">
+                    <optgroup label="Business">
+                        <option value="recruiter">Recruiter</option>
+                        <option value="coworker">Co-Worker</option>
+                    </optgroup>
+                    <optgroup label="School">
+                        <option value="student">Student</option>
+                        <option value="teacher">Teacher</option>
+                        <option value="grader">Grader</option>
+                    </optgroup>
+                    <optgroup label="Other">
+                        <option value="friend">Friend</option>
+                        <option value="family">Family</option>
+                        <option value="rando">Rando</option>
+                    </optgroup>
+                    </select>
+                    
+                    <br><br>
+
+                    <label for="flavor">Choose your favorite ice cream flavor:</label>
+                        <input list="flavors" name="flavor" id="flavor">
+                        <datalist id="flavors">
+                            <option value="Cherry"></option>
+                            <option value="Rocky Road"></option>
+                            <option value="Chocolate Chip"></option>
+                            <option value="Vanilla"></option>
+                            <option value="Neopolitan"></option>
+                            <option value="Mint"></option>
+                            <option value="Other"></option>
+                        </datalist>
+                    <br><br>
+                    <input type="submit" value="Submit">
+                </form>
+            </section>
+        </main>
+
+        <hr>
+
+        <footer>
+            <p>Author: Alan Hang</p>
+            <p><a href="mailto:alhang@ucsd.edu">alhang@ucsd.edu</a></p>
+        </footer>
+    </body>
+
+</html>
