@@ -5,22 +5,26 @@
         <meta charset="UTF-8">
         <meta name="author" content="Alan Hang">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="./assets/style.css">
         <!--Placeholder stylesheet-->
+        <style>
+            #nav-about{
+                background-color:rgb(0, 162, 255);
+            }
+        </style>
     </head>
 
     <body>
         <header>
             <h1>Welcome to Alan's Digital Portfolio</h1>
 
-            <h3>Navigation:</h3>
             <nav>
                 <ul>
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./about.html"><b>About</b></a></li>
-                    <li><a href="./projects.html">Projects</a></li>
-                    <li><a href="./skills.html">Skills</a></li>
-                    <li><a href="./contact.html">Contact Me</a></li>
+                    <li><a id="nav-home" href="./index.html">Home</a></li>
+                    <li><a id="nav-about" href="./about.html">About</a></li>
+                    <li><a id="nav-projects" href="./projects.html">Projects</a></li>
+                    <li><a id="nav-skills" href="./skills.html">Skills</a></li>
+                    <li><a id="nav-contact" href="./contact.html">Contact Me</a></li>
                 </ul>
             </nav>
         </header>
@@ -30,12 +34,17 @@
         <main>
             <section>
                 <h2>About Me</h2>
-                <figure>
-                    <picture><img src="./media/profilepic.jpeg" width="280" height="375" alt="Profile Picture"> 
+                <div class="image_gallery">
+                    <picture><img class="card_image" src="./media/profilepic.jpeg" alt="Profile Picture"> 
                         <!--picture ratio is 1151 × 1498-->
                     </picture>
-                    <figcaption><i>Winter break in Yosemite</i></figcaption>
-                </figure>
+                    <picture><img class="card_image" src="./media/profilepic.jpeg" alt="Profile Picture"> 
+                        <!--picture ratio is 1151 × 1498-->
+                    </picture>
+                    <picture><img class="card_image" src="./media/profilepic.jpeg" alt="Profile Picture"> 
+                        <!--picture ratio is 1151 × 1498-->
+                    </picture>
+                </div>
                 <p>Hello there! My name is Alan and I'm from San Diego, born and raised. In my free time, I like to engage in my various hobbies. 
                     I like making art, whether it be digital, painting, or just using a pencil. I specialize in hyper-realistic
                     graphite art, but have been exploring other areas such as digital manga art as well as oil painting. I also enjoy 
