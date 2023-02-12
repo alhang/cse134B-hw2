@@ -37,12 +37,12 @@ h2, h3, h4{
     font-family: ostrick-sans-black;
 }
 
-p, details li, label{
+p, li, label, td{
     max-width: 150ch;
     font-family: Lato;
 }
 
-summary, legend{
+summary, legend, th{
     font-family: Lato-bold;
 }
 
@@ -63,6 +63,10 @@ main {
     margin-left: 5em;
 }
 
+ol {
+    list-style-type: none;
+}
+
 nav ul {
     list-style-type: none;
     margin: 0;
@@ -75,6 +79,8 @@ nav ul {
     text-align: center;
 
     gap: 0.3em;
+    margin-right: 5em;
+    margin-left: 5em;
 }
   
 nav li {
@@ -105,33 +111,6 @@ hr {
     border-radius: 5px;
 }
 
-@media (max-width: 1000px) {
-    nav ul {
-      flex-direction: column;
-    }
-
-    main {
-        padding: 1em 2em;
-        
-        margin-right: 1em;
-        margin-left: 1em;
-    }
-
-    h1{
-        margin-right: 0.5em;
-        margin-left: 0.5em;
-    }
-
-    .image_gallery {
-        flex-wrap: wrap;
-        float: center;
-        justify-content: center;
-    }
-
-    .card_image{
-    }
-  }
-
 .image_gallery {
     display: flex;
     flex-direction: row;
@@ -150,5 +129,40 @@ fieldset {
 }
 
 footer {
-
+    padding: 1em 10em;
 }
+
+@media (max-width: 900px) {
+    nav ul {
+        flex-direction: column;
+        margin-right: 1em;
+        margin-left: 1em;
+    }
+
+    main {
+        padding: 1em 2em;
+        
+        margin-right: 1em;
+        margin-left: 1em;
+        border-radius: 1em;
+    }
+
+    h1{
+        margin-right: 0.5em;
+        margin-left: 0.5em;
+        border-radius: 1em;
+    }
+
+    .image_gallery {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    footer {
+        padding: 1em 3em;
+    }
+
+    textarea {
+        width: 100%;
+    }
+  }
