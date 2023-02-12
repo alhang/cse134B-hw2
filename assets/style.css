@@ -22,7 +22,10 @@ p, li{
 }
 
 body {
-    background-color: var(--lightblue);
+    background-color: white;
+    background-image: linear-gradient(var(--lightblue), white);
+    background-repeat: no-repeat;
+    
 }
 
 main {
@@ -81,16 +84,15 @@ hr {
       flex-direction: column;
     }
 
-    .card_image {
-        width: fit-content;
-        object-fit: fill;
-    }
-
     main {
         padding: 1em 2em;
         
         margin-right: 1em;
         margin-left: 1em;
+    }
+
+    .image_gallery {
+        flex-wrap: wrap;
     }
   }
 
@@ -98,13 +100,10 @@ hr {
     display: flex;
     flex-direction: row;
     gap: 1em;
-    flex-wrap: wrap;
-    border: 3px solid red; 
 }
 
 .card_image {
-    height: 23em;
+    height: 25em;
     max-width: 100%;
     object-fit: cover;
-    width: fit-content
 }
