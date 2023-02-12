@@ -34,7 +34,7 @@
       #1f1250 0%,
       #3d0f6f 14%,
       #ee1e63 28%,
-      #f0e811 42%,
+      #e7e129 42%,
       #ee1e63 72%,
       #3d0f6f 86%,
       #1f1250 100%
@@ -55,7 +55,7 @@
 
 @keyframes textclip {
     to {
-      background-position: 200% center;
+      background-position: 300% center;
     }
   }
 
@@ -89,7 +89,7 @@ main {
     margin-right: 5em;
     margin-left: 5em;
 
-    animation: fadeIn 1.5s;
+    animation: fadeIn 2s;
 }
 
 @keyframes fadeIn {
@@ -139,7 +139,7 @@ nav li a {
     display: block;
     color: white;
     text-align: center;
-    padding: 20px 50px;
+    padding: 20px;
     text-decoration: none;
     border-radius: 1em;
 }
@@ -176,7 +176,7 @@ footer {
     padding: 1em 10em;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 900px) {
     nav ul {
         flex-direction: column;
         margin-right: 1em;
