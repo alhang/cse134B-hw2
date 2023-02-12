@@ -6,19 +6,44 @@
     --lightblue: rgb(182, 235, 255);
 }
 
+@font-face {
+    font-family: Lato;
+    src: url(./fonts/lato/Lato-Light.ttf);
+}
+
+@font-face {
+    font-family: Lato-bold;
+    src: url(./fonts/lato/Lato-Bold.ttf);
+}
+
+@font-face {
+    font-family: ostrick-sans-black;
+    src: url(./fonts/ostrich-sans/ostrich-black.ttf);
+}
+
 h1 {
+    font-family: ostrick-sans-black;
     text-align: center;
     background-color: white;
     border-radius: 1em;
 
-    padding: 0.5em 1em;
+    padding: 0.7em 1em;
     
     margin-right: 2.4em;
     margin-left: 2.4em;
 }
 
-p, li{
+h2, h3, h4{
+    font-family: ostrick-sans-black;
+}
+
+p, details li, label{
     max-width: 150ch;
+    font-family: Lato;
+}
+
+summary, legend{
+    font-family: Lato-bold;
 }
 
 body {
@@ -60,6 +85,7 @@ nav li {
 }
   
 nav li a {
+    font-family: Lato-bold;
     display: block;
     color: white;
     text-align: center;
@@ -91,8 +117,18 @@ hr {
         margin-left: 1em;
     }
 
+    h1{
+        margin-right: 0.5em;
+        margin-left: 0.5em;
+    }
+
     .image_gallery {
         flex-wrap: wrap;
+        float: center;
+        justify-content: center;
+    }
+
+    .card_image{
     }
   }
 
@@ -106,4 +142,13 @@ hr {
     height: 25em;
     max-width: 100%;
     object-fit: cover;
+    border-radius: 3px;
+}
+
+fieldset {
+    width: 100%
+}
+
+footer {
+
 }
