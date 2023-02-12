@@ -21,17 +21,43 @@
     src: url(./fonts/ostrich-sans/ostrich-black.ttf);
 }
 
-h1 {
+#title{
     font-family: ostrick-sans-black;
-    text-align: center;
-    background-color: white;
-    border-radius: 1em;
-
-    padding: 0.7em 1em;
+    font-size: 3em;
+    padding: 0.3em;
     
-    margin-right: 2.4em;
-    margin-left: 2.4em;
+    margin-right: 1.5em;
+    margin-left: 1.5em;
+    
+    background-image: linear-gradient(
+      -225deg,
+      #1f1250 0%,
+      #3d0f6f 14%,
+      #ee1e63 28%,
+      #f0e811 42%,
+      #ee1e63 72%,
+      #3d0f6f 86%,
+      #1f1250 100%
+    );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 300% auto;
+    color: #fff;
+    background-clip: text;
+    
+    animation: textclip 20s linear infinite;
+    display: inline-block;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-box-reflect: below -50px linear-gradient(transparent, rgba(0,0,0,.1));
 }
+
+@keyframes textclip {
+    to {
+      background-position: 200% center;
+    }
+  }
 
 h2, h3, h4{
     font-family: ostrick-sans-black;
@@ -51,6 +77,7 @@ body {
     background-image: linear-gradient(var(--lightblue), white);
     background-repeat: no-repeat;
     
+    transition-property: all;
 }
 
 main {
@@ -61,7 +88,23 @@ main {
     
     margin-right: 5em;
     margin-left: 5em;
+
+    animation: fadeIn 1.5s;
 }
+
+@keyframes fadeIn {
+    from { 
+        opacity: 0;
+        margin-top: 4%;
+        height: 120%; 
+    }
+    
+    to { 
+        opacity: 1;
+        margin-top: 0%;
+        height: 100%;
+    }
+  }
 
 ol {
     list-style-type: none;
@@ -72,7 +115,7 @@ nav ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: var(--lightblue);
+    background-color: transparent;
 
     display: flex;
     flex-direction: row;
@@ -88,6 +131,7 @@ nav li {
     flex-grow: 1;
     float: left;
     background-color: rgb(0, 89, 162);
+    
 }
   
 nav li a {
@@ -132,7 +176,7 @@ footer {
     padding: 1em 10em;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
     nav ul {
         flex-direction: column;
         margin-right: 1em;
@@ -147,10 +191,12 @@ footer {
         border-radius: 1em;
     }
 
-    h1{
+    #title{
         margin-right: 0.5em;
         margin-left: 0.5em;
         border-radius: 1em;
+
+        -webkit-box-reflect: none;
     }
 
     .image_gallery {
