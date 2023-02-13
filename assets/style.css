@@ -245,7 +245,7 @@ caption {
     float: left;
 }
 
-@media (max-width: 43rem) {
+@media (max-width: 44rem) {
     details{
         min-width: 0;
         width: 100%;
