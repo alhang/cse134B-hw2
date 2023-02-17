@@ -6,6 +6,7 @@
         <meta name="author" content="Alan Hang">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./assets/style.css">
+        <link rel="icon" type="image/jpeg" href="./media/favicon.png">
         <!--Placeholder stylesheet-->
         <style>
             #nav-about{
@@ -17,6 +18,8 @@
             }
 
             #yosemite{
+                flex-shrink: 0.25;
+                flex-grow: 10;
                 min-width: 8rem;
             }
         </style>
@@ -24,7 +27,7 @@
 
     <body>
         <header>
-            <h1 id="title">Welcome to Alan's Digital Portfolio</h1>
+            <h1 id="title">Alan's Digital Portfolio</h1>
 
             <nav>
                 <ul>
@@ -43,9 +46,21 @@
             <section>
                 <h2>About Me</h2>
                 <div class="image_gallery">
-                    <picture><img class="card_image" id="yosemite" src="./media/yosemite.jpeg" alt="Me at Yosemite National Park"></picture>
-                    <picture><img class="card_image" id="canyon" src="./media/canyon.jpeg" alt="Me at the Grand Canyon"></picture>
-                    <picture><img class="card_image" id="zion" src="./media/zion.jpeg" alt="Me at Zion National Park"></picture>
+                    <picture>
+                        <source media="(min-width:60rem)" srcset="./media/yosemite-desktop.jpeg">
+                        <source media="(min-width:30rem)" srcset="./media/yosemite-tablet.jpeg">
+                        <img class="card_image" id="yosemite" src="./media/yosemite-mobile.jpeg" alt="Me at Yosemite National Park">
+                    </picture>
+                    <picture>
+                        <source media="(min-width:60rem)" srcset="./media/canyon-desktop.jpeg">
+                        <source media="(min-width:30rem)" srcset="./media/canyon-tablet.jpeg">
+                        <img class="card_image" id="canyon" src="./media/canyon-mobile.jpeg" alt="Me at the Grand Canyon">
+                    </picture>
+                    <picture>
+                        <source media="(min-width:60rem)" srcset="./media/zion-desktop.jpeg">
+                        <source media="(min-width:30rem)" srcset="./media/zion-tablet.jpeg">
+                        <img class="card_image" id="zion" src="./media/zion-mobile.jpeg" alt="Me at Zion National Park">
+                    </picture>
                     
                 </div>
                 <p>Hello there! My name is Alan and I'm from San Diego, born and raised. In my free time, I like to engage in my various hobbies. 
